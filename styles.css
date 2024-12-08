@@ -1,0 +1,115 @@
+/* Import custom font */
+@font-face {
+    font-family: 'WinterTrendy';
+    src: url('fonts/WinterTrendy.ttf') format('truetype');
+}
+
+/* General Body Styling */
+body {
+    font-family: 'WinterTrendy', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the content is vertically centered */
+}
+
+/* Main container to center the content */
+.container {
+    width: 90%; /* Default width */
+    max-width: 400px; /* Limit the width on larger screens */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Custom color themes */
+.bg-dark-lighter {
+    background-color: #eaeaea !important;
+}
+
+.text-primary {
+    color: #2b6c98 !important;
+}
+
+.btn-pink {
+    background-color: #ff66b3;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Add spacing between buttons */
+    width: 100%; /* Full width on mobile */
+}
+
+.btn-pink:hover {
+    background-color: #ff3385;
+    color: white;
+    cursor: pointer;
+}
+
+textarea {
+    height: 120px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ff99cc;
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 15px; /* Add spacing below textarea */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#output {
+    background-color: #f9e6f2;
+    border: 1px solid #ff99cc;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #333;
+    font-size: 16px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    padding: 15px; /* Add padding inside the output box */
+    text-align: left; /* Align text to the left */
+}
+
+/* Heading Styling */
+h1 {
+    color: #ff66b3;
+    font-family: 'WinterTrendy', Arial, sans-serif;
+    font-size: 2rem; /* Adjust heading size for mobile */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Adjust buttons and textarea spacing */
+#menu button {
+    font-size: 16px; /* Preserve button size on PC */
+    margin-bottom: 10px;
+}
+
+#menu {
+    margin-bottom: 20px; /* Add spacing between the menu and textarea */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Maintain responsive width */
+    }
+
+    textarea {
+        height: 100px; /* Slightly smaller height for textarea */
+    }
+
+    .btn-pink {
+        font-size: 16px; /* Keep buttons readable */
+    }
+
+    #output {
+        font-size: 14px; /* Slightly smaller output text for mobile */
+    }
+}
